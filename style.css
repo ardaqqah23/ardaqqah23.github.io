@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #563b63;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid #e2d7e8;
+}
+
+h2 {
+    color: #563b63;
+    margin-bottom: 15px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.profile img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #b99ac8;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #d8c9df;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #563b63;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f3edf6;
+}
+
+a {
+    color: #79518b;
+}
+
+.contact-section {
+    max-width: 650px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, textarea {
+    padding: 12px;
+    border: 1px solid #cbbbd3;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 100%;
+}
+
+button {
+    background-color: #563b63;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #79518b;
+}
+
+footer {
+    background-color: #563b63;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}
